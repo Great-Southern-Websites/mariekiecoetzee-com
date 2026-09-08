@@ -1,15 +1,82 @@
 ---
-title: "Home"
-description: "BUILDER: one-sentence description of the business for search engines."
-image: logo.png
+title: "Mariekie Coetzee"
+description: "I am Mariekie Coetzee, a Software Engineer in Brisbane, Queensland, working with .NET, Blazor, Azure and GitHub. Read about me and get in touch."
+image: profile.jpg
 layout: default
 ---
-<!-- BUILDER: hero, then the sections that mirror the original home page. -->
+{@io.quarkiverse.roq.frontmatter.runtime.model.Page page}
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
 <section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Software Engineer</p>
+      <h1>Mariekie Coetzee</h1>
+      <p class="lead">I'm a Software Engineer, Front-end Developer, Back-end Developer and Full Stack Developer based in Brisbane, Queensland.</p>
+      <p class="hero-actions">
+        <a class="btn btn-primary" href="{=site.url('resume')}">View my resume</a>
+        <a class="btn btn-outline" href="mailto:profile@mariekiecoetzee.com" style="color: var(--ink-fg);">Email me</a>
+      </p>
+      {#include partials/social-links /}
+    </div>
+    <div class="hero-photo">
+      <img src="{=site.url('images/profile.jpg')}" alt="Mariekie Coetzee" width="1079" height="1200">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
   <div class="container">
-    <p class="eyebrow">Welcome</p>
-    <h1>Mariekie Coetzee</h1>
-    <p class="lead">Replace this with the business's own words.</p>
-    <p class="hero-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Contact us</a></p>
+    <div class="split">
+      <div>
+        <h2>About</h2>
+        <p>I was born and raised in South Africa. I married my soul mate Martin Coetzee and we have two beautiful children. We love nature, exploring, hiking and camping. We immigrated to Australia in 2018 and are proud citizens of Australia. Since moving to Queensland in 2022, we have been thoroughly enjoying everything this beautiful state has to offer.</p>
+        <p>After spending several years in the software industry and working in various customer service positions, I was presented with an opportunity to move into software development. It was during this time that I discovered my true calling and realised that my destiny was to become a software developer.</p>
+      </div>
+      <div class="card">
+        <h3>Software Engineer</h3>
+        <p>I am a Software Engineer who loves creating user-friendly interfaces and tackling back-end challenges. I enjoy front-end frameworks like Blazor and have experience with .NET, Azure and GitHub. I'm always learning and keen to take on new challenges in software development.</p>
+        <p><a class="cta" href="{=site.url('resume')}">Read my resume</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to send me an email.</p>
+        <ul class="contact-list">
+          <li><span class="label">City</span><span>Brisbane, Queensland, Australia</span></li>
+          <li><span class="label">Email</span><a href="mailto:profile@mariekiecoetzee.com">profile@mariekiecoetzee.com</a></li>
+        </ul>
+        <p class="hero-actions"><a class="btn btn-primary" href="mailto:profile@mariekiecoetzee.com">Send me an email</a></p>
+      </div>
+      <div>
+        <h2>Find me online</h2>
+        <p>My code, writing and talks live on these profiles.</p>
+        {#include partials/social-links /}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card-grid">
+      <div class="card">
+        <h3><a href="{=site.url('resume')}">Resume</a></h3>
+        <p>Certifications, skills and work experience, from SYSPRO in South Africa to Queensland Health in Brisbane.</p>
+      </div>
+      <div class="card">
+        <h3><a href="{=site.url('blogs')}">Blogs</a></h3>
+        <p>Posts on Blazor, .NET, Azure, WebAssembly, CI/CD, security and accessibility, published on Medium.</p>
+      </div>
+      <div class="card">
+        <h3><a href="{=site.url('presentations')}">Presentations</a></h3>
+        <p>Recorded talks on building games and accessible components in Blazor.</p>
+      </div>
+    </div>
   </div>
 </section>

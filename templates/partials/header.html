@@ -2,15 +2,18 @@
 <header class="site-header">
   <div class="container bar">
     <a class="brand" href="{=site.url}">
-      <!-- BUILDER: replace with the logo image (public/images/logo.*) or a wordmark -->
+      <img src="{=site.url('images/monogram.svg')}" alt="" width="36" height="36">
       <span class="brand-name">Mariekie Coetzee</span>
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
     <label for="nav-toggle" class="nav-toggle"><span></span></label>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
-        <!-- BUILDER: one <li> per page, mirroring the original site's navigation -->
         <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url}#about">About</a></li>
+        <li><a href="{=site.url('resume')}">Resume</a></li>
+        <li><a href="{=site.url('blogs')}">Blogs</a></li>
+        <li><a href="{=site.url('presentations')}">Presentations</a></li>
       </ul>
     </nav>
   </div>

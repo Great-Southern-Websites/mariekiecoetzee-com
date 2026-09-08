@@ -3,10 +3,22 @@
   <div class="container footer-grid">
     <div>
       <p class="footer-brand">Mariekie Coetzee</p>
-      <!-- BUILDER: address, phone, email, hours from the original site -->
+      <p>Software Engineer<br>Brisbane, Queensland, Australia</p>
+      <p><a href="mailto:profile@mariekiecoetzee.com">profile@mariekiecoetzee.com</a></p>
     </div>
     <div>
-      <!-- BUILDER: footer navigation -->
+      <p class="footer-brand">Pages</p>
+      <ul>
+        <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url}#about">About</a></li>
+        <li><a href="{=site.url('resume')}">Resume</a></li>
+        <li><a href="{=site.url('blogs')}">Blogs</a></li>
+        <li><a href="{=site.url('presentations')}">Presentations</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-brand">Find me on</p>
+      {#include partials/social-links /}
     </div>
   </div>
   <div class="container footer-bottom">
